@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(14, 174, 87, 1) 0%,
+    rgba(12, 116, 117, 1) 90%
+  );
+
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.wrap {
+  display: grid;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.299);
+  backdrop-filter: blur(4px);
+  /* filter: blur(4px); */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  padding: 5rem;
+}
+
+.Header-text {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.noNums {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.sortedNums {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.Form {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  align-items: center;
+}
+
+.Form-input {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+.Form-btn {
+  font-size: 1.5rem;
+  height: 2.9rem;
+
+  padding: 0rem 2rem;
+
+  background:#2c528c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.Form-reset {
+  font-size: 1.5rem;
+  height: 2.9rem;
+
+  padding: 0rem 2rem;
+
+  background: #c20a2f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.sortedNums::after {
+  letter-spacing: .3rem;
+}
