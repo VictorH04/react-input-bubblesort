@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  frontend:
+    container_name: react-bubble-dev
+    image: victorhristov04/react-bubble-dev
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3000:3000
+    environment:
+     CHOKIDAR_USEPOLLING: "true"
